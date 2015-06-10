@@ -13,8 +13,8 @@
 ハッシュ形式で値を格納し1,5,15,25,100があるか調べよ。
  */
 
-require_once './part/Bucket.php';
-require_once './part/ChainHashBox.php';
+require_once '../part/Bucket.php';
+require_once '../part/ChainHashBox.php';
 
 //ハッシュボックスを作成し、値を追加する
 $chainHashBox = new chainHashBox(10);
