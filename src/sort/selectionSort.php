@@ -20,17 +20,17 @@ $isChange  = false;
 
 for($sortedCount = 0; $sortedCount < $listCount; $sortedCount++ ) {
     //最小値のキーの変数を定義。まずは基準位置をセットする
-    $min = $sortedCount;
+    $minKey = $sortedCount;
     //最小値を探す
     for ($index = $sortedCount +1; $index < $listCount; $index++) {
         if ($list[$index] < $list[$sortedCount]) {
-            $min      = $index;
+            $minKey   = $index;
             $isChange = true;
         }
         if ($isChange) {
             //最小値が変わったら
             $tmp                = $list[$sortedCount];
-            $list[$sortedCount] = $list[$min];
+            $list[$sortedCount] = $list[$minKey];
             $list[$index]       = $tmp;
             $isChange           = false;
         }
