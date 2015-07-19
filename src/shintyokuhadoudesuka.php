@@ -27,5 +27,5 @@ while (true) {
 
 echo '???';
 echo '<br>';
-echo (mb_strlen(implode('', $words))) . ' 文字で煽られた';
+echo (mb_strlen(implode('', $words), 'UTF-8')) . ' 文字で煽られた';
 
