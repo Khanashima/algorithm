@@ -11,7 +11,7 @@ $words = array();
 $n     = 0;
 
 while (true) {
-    $randomWord = $source[rand(0, 3)];
+    $randomWord = $source[mt_rand(0, 3)];
     $words[]    = $randomWord;
     echo $randomWord;
     if ($n > 2 &&
@@ -19,7 +19,7 @@ while (true) {
         $words[$n-1] == 'です' &&
         $words[$n-2] == 'どう' &&
         $words[$n-3] == '進捗'
-            ) {
+    ) {
         break;
     }
     $n++;
